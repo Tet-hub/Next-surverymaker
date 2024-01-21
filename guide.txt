@@ -9,3 +9,13 @@ git push -u origin main
 git remote add origin https://github.com/Tet-hub/Next.Shadcn.ui.git
 git branch -M main
 git push -u origin main
+
+//setup prisma
+npm install prisma --save-dev
+npx prisma init
+
+//migrate the prisma schema to sql/postgresql
+npx prisma migrate dev
+
+//how to run prisma
+npx prisma studio
